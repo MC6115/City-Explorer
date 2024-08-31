@@ -1,9 +1,9 @@
 import axios from "axios";
 import React from "react";
-import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CitySearch from "./CitySearch";
 import LatLon from "./LatLon";
+import Map from "./Map";
 import Map from "./Map";
 
 const API_KEY = import.meta.env.VITE_API_KEY
@@ -45,7 +45,6 @@ class Explorer extends React.Component {
             });
         };
     };
-
     render() {
         return (
             <Container>

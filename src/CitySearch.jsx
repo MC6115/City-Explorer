@@ -1,17 +1,17 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
-import { Alert } from "react-bootstrap";
+import { Form, Button, Alert } from "react-bootstrap";
 
 class CitySearch extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault();
+        this.porps.displayLatLon();
     }
     render() {
         return (
-            <Form>
+            <Form onSubmit={this.handleSubmit}>
                 <Form.Group className="searchBar" controlId="cityName">
                     <Form.Label>Ingresa la dirección a explorar</Form.Label>
-                    <Form.Control type="text" placeholder="Ingresa dirección" />
+                    <Form.Control type="text" placeholder="Ingresa dirección" onChange={this.props.displayLatLon}/>
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     Explora!
