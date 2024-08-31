@@ -1,12 +1,3 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
 # City Explorer
 
 **Autor**: Tu nombre va aquí
@@ -19,6 +10,16 @@ Currently, two official plugins are available:
 <!-- ¿Cuáles son los pasos que debe seguir un usuario para hacer un build de esta aplicación en su propio equipo y ejecutarla? -->
 
 ## Arquitectura
+
+Nombre de la funcionalidad: ________________________________
+
+Tiempo estimado necesario para completarlo: _____
+
+Hora de inicio:_____
+
+Hora de finalización: _____
+
+Tiempo real necesario para completarlo: _____
 <!-- Proporciona una descripción detallada del diseño de la aplicación. Qué tecnologías (lenguajes, librerías, etc.) estás utilizando y cualquier otra información de diseño relevante. -->
 
 ## Historial de cambios
@@ -27,4 +28,7 @@ Currently, two official plugins are available:
 01-01-2001 4:59pm - La aplicación ahora tiene un servidor express completamente funcional, con una ruta GET para el recurso de ubicación. -->
 
 ## Créditos y colaboraciones
+
+- React + Vite
+
 <!-- Da crédito (y un enlace) a otras personas o recursos que te ayudaron a crear esta aplicación. -->
