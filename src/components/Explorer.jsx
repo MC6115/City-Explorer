@@ -25,9 +25,9 @@ class Explorer extends React.Component {
     };
     displayLatLon = async () => {
         const url = `https://us1.locationiq.com/v1/search?key=${API_KEY}&q=${this.state.searchQuery}&format=json`
-        let searchedLocation;
+        let location;
         try {
-            searchedLocation = await axios.get(url);
+            location = await axios.get(url);
             this.setState({
                 location: location.data[0].display_name,
                 latitud: location.data[0].lat,
