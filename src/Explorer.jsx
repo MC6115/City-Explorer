@@ -66,7 +66,7 @@ class Explorer extends React.Component {
                                 <Map img_url={`https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${this.state.latitud},${this.state.longitud}&zoom=12&size=600x400&format=jpg&maptype=streets`} city={this.state.location}/>
                             </Col>
                         </Row>
-                    </>
+                    </> 
                 }
             </Container>
         );

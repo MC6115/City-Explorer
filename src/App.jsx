@@ -1,18 +1,21 @@
 import React from 'react'
-// import { useState } from 'react'
 import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './Header'
+import Footer from './Footer'
 
-function App() {
-  // const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <Header />
-      <Footer />
-    </>
-  )
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+  };
+  render() {
+    return (
+      <>
+        <Header />
+        <Footer />
+      </>
+    )
+  }
 }
 
 export default App
