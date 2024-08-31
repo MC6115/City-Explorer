@@ -3,6 +3,8 @@ import React from "react";
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CitySearch from "./CitySearch";
+import LatLon from "./LatLon";
+import Map from "./Map";
 
 const API_KEY = import.meta.env.VITE_API_KEY
 
@@ -49,19 +51,19 @@ class Explorer extends React.Component {
             <Container>
                 <Row>
                     <Col>
-                        <CitySearch updateCity={this.updateCity} displayLatLon={this.displayLatLon} hasError={this.state.displayError} errorMessage={this.state.errorMessage} />
+                        <CitySearch updateCity={this.state.updateCity} displayLatLon={this.state.displayLatLon} hasError={this.state.displayError} errorMessage={this.state.errorMessage} />
                     </Col>
                 </Row>
                 {this.state.displayMap &&
                     <>
                         <Row>
                             <Col>
-
+                                <LatLon city={this.state.location} lat={this.state.latitud} lon={this.state.longitud} />
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-
+                                <Map img_url={`https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${this.state.latitud},${this.state.longitud}&zoom=12&size=600x400&format=jpg&maptype=streets`} city={this.state.location}/>
                             </Col>
                         </Row>
                     </>
